@@ -1,26 +1,82 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <Magnet
+      v-for="(word, index) in words"
+      :key="'word-' + index"
+      :word="word"
+    />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { words } from "./assets/words.js";
+import Magnet from "./components/Magnet.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Magnet,
+  },
+  data() {
+    return {
+      words: words,
+    };
+  },
+};
 </script>
 
 <style>
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin: 0;
+  padding: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 1rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin: 0;
+  padding: 1rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 1rem;
+}
+
+p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: #131313;
 }
 </style>
