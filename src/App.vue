@@ -1,7 +1,7 @@
 <template>
   <div>
     <Magnet
-      v-for="(word, index) in words"
+      v-for="(word, index) in randWords"
       :key="'word-' + index"
       :word="word"
     />
@@ -17,10 +17,17 @@ export default {
   components: {
     Magnet,
   },
-  data() {
-    return {
-      words: words,
-    };
+  computed: {
+    randWords() {
+      const magnets = [];
+
+      // grab random 100 words
+      for (let i = 0; i < 100; i++) {
+        magnets.push(words[Math.floor(Math.random() * 3000)]);
+      }
+
+      return magnets;
+    },
   },
 };
 </script>
