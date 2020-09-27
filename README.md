@@ -13,3 +13,5 @@ Magnetic poetry from the comfort of your own computer screen! Made with Vue! Vie
 ## Issues? Suggestions?
 
 - Create an [issue](https://github.com/chinanwu/magnet-poetry/issues)!
+
+Note to salmon: To deploy to gh-pages `git subtree push --prefix dist origin gh-pages`
