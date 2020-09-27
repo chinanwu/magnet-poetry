@@ -14,4 +14,10 @@ Magnetic poetry from the comfort of your own computer screen! Made with Vue! Vie
 
 - Create an [issue](https://github.com/chinanwu/magnet-poetry/issues)!
 
+## Upcoming Features(?)
+
+These are things that I have in my noggin and want to implement (if I have the time...):
+
+- The option to select word packages! Right now I just have 3000 words and I grab 100 random words from there. I'd love to, for example, have a D&D subset or something!
+
 Note to salmon: To deploy to gh-pages `git subtree push --prefix dist origin gh-pages`
