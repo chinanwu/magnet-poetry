@@ -20,4 +20,8 @@ These are things that I have in my noggin and want to implement (if I have the t
 
 - The option to select word packages! Right now I just have 3000 words and I grab 100 random words from there. I'd love to, for example, have a D&D subset or something!
 
-Note to salmon: To deploy to gh-pages `git subtree push --prefix dist origin gh-pages`
+## To Deploy Changes
+- Push code changes
+- Build, and then force push the whole `dist` (i.e. git add -f dist)
+- Finally, push the changes to gh-pages `git subtree push --prefix dist origin gh-pages`
+- Check the changes are there
