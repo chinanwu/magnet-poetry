@@ -19,15 +19,12 @@ export default {
   },
   computed: {
     randWords() {
-      const magnets = [];
+      const magnets = ["Salmon", "Addyson"];
 
       // grab random 100 words
       for (let i = 0; i < 100; i++) {
         magnets.push(words[Math.floor(Math.random() * 3000)]);
       }
-
-      magnets.push("Salmon")
-      magnets.push("Addyson")
 
       return magnets;
     },
