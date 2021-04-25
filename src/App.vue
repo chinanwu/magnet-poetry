@@ -19,7 +19,7 @@ export default {
   },
   computed: {
     randWords() {
-      const magnets = ["Salmon", "Addyson"];
+      const magnets = ["Salmon", "loves", "Addyson"];
 
       // grab random 100 words
       for (let i = 0; i < 100; i++) {
