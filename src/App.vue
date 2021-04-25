@@ -26,6 +26,9 @@ export default {
         magnets.push(words[Math.floor(Math.random() * 3000)]);
       }
 
+      magnets.push("Salmon")
+      magnets.push("Addyson")
+
       return magnets;
     },
   },
